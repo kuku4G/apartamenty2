@@ -1,1 +1,0 @@
-# apartamenty_sadowy
