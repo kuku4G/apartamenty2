@@ -15,15 +15,15 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 
 const paths = {
-	html: './html/**/*.kit',
-	sass: './src/sass/**/*.scss',
-	js: './src/js/**/*.js',
-	img: './src/img/*',
+	html: 'html/**/*.kit',
+	sass: 'src/sass/**/*.scss',
+	js: 'src/js/**/*.js',
+	img: 'src/img/*',
 
-	dist: './dist',
-	sassDest: './dist/css',
-	jsDest: './dist/js',
-	imgDest: './dist/img',
+	dist: 'dist',
+	sassDest: 'dist/css',
+	jsDest: 'dist/js',
+	imgDest: 'dist/img',
 };
 
 function sassCompiler(done) {
@@ -79,7 +79,7 @@ function startBrowserSync(done) {
 }
 
 function watchForChanges(done) {
-	watch('./*.html').on('change', reload);
+	watch('*.html').on('change', reload);
 	watch(
 		[paths.html, paths.sass, paths.js],
 		parallel(handleKits, sassCompiler, javaScript)
