@@ -32,9 +32,10 @@
 
 	@supports (-webkit-touch-callout: none) {
 		&__home {
-			height: 100%;
+			height: 80vh;
+			background-size: auto 80vh;
 			background-image: url('../img/apartamenty_hero_mobile_test.jpg') no-repeat
-				center top cover scroll;
+				center center cover scroll, $gradient;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			-o-background-size: cover;
