@@ -33,19 +33,22 @@
 		@include backgroundHeader;
 	}
 
-	@supports (-webkit-touch-callout: none) {
-		&__home {
-			height: 70vh;
-			background-image: url('../img/apartamenty_hero_mobile_test.jpg'), $gradient;
-			background-position:center;
-			background-attachment:scroll;
-			background-size:cover;
+	// @supports (-webkit-touch-callout: none) {
+	// 	&__home {
+	// 		height: 70vh;
+	// 		background-image: url('../img/apartamenty_hero_mobile_test.jpg');
+	// 		background-image: -webkit-linear-gradient(45deg,
+	// 		rgba(99, 96, 96, 0.75),
+	// 		rgba(26, 17, 12, 0.853));
+	// 		background-position:center;
+	// 		background-attachment:scroll;
+	// 		background-size:cover;
 
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-		}
-	}
+	// 		-webkit-background-size: cover;
+	// 		-moz-background-size: cover;
+	// 		-o-background-size: cover;
+	// 	}
+	// }
 
 	&__apartment {
 		height: 25vh;
