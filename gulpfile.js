@@ -21,9 +21,9 @@ const paths = {
 	img: './src/img/*',
 
 	dist: './dist',
-	sassDest: './dist/css',
-	jsDest: './dist/js',
-	imgDest: './dist/img',
+	sassDest: './dist/css/**/*.css',
+	jsDest: './dist/js/**/*.js',
+	imgDest: './dist/img/*',
 };
 
 function sassCompiler(done) {
