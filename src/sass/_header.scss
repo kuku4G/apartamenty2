@@ -27,25 +27,8 @@
   
 	&__home {
 	  position: relative;
-	  height: 80vh;
-	  overflow: hidden; /* Ensure the gradient doesn't overflow */
-	//   @include backgroundHeader; /* You may have a mixin for background styles here */
-  
-	  /* Apply gradient using a pseudo-element */
-	  @supports not ( -webkit-touch-callout : none) {
-		  &::before {
-			content: '';
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			// background: -webkit-linear-gradient(45deg, rgba(99, 96, 96, 0.75), rgba(26, 17, 12, 0.853));
-			background: -webkit-linear-gradient(45deg, rgba(99, 96, 96, 0.75), rgba(26, 17, 12, 0.853)),
-					  url('../img/apartamenty_hero_mobile_test.jpg') no-repeat center center cover scroll;
-			// z-index: -1; /* Ensure the gradient is behind the content */
-		  }
-	  }
+	  height: 70vh;
+	  @include backgroundHeader; /* You may have a mixin for background styles here */
 	}
   
 	&__apartment {
@@ -53,11 +36,6 @@
 		background-image: $gradientTwo;
 		display: flex;
 		justify-content: center;
-	}
-
-	&__mountains {
-		height: 45vh;
-		@include heroImagesApartment('/src/img/aboutus/wschod.jpg');
 	}
 
 	&__heading {
@@ -90,6 +68,22 @@
 	}
 }
 
+@media (max-width: 767px) {
+		  /* Apply gradient using a pseudo-element */
+		  @supports not ( -webkit-touch-callout : none) {
+			.header__home::before {
+			  content: '';
+			  position: absolute;
+			  top: 0;
+			  right: 0;
+			  bottom: 0;
+			  left: 0;
+			  background: linear-gradient(45deg, rgba(99, 96, 96, 0.75), rgba(26, 17, 12, 0.853));
+			  background: -webkit-linear-gradient(45deg, rgba(99, 96, 96, 0.75), rgba(26, 17, 12, 0.853)),
+						url('../img/apartamenty_hero_mobile_test.jpg') no-repeat center center cover scroll;
+			}
+		}
+}
 @media (min-width: 768px) {
 	.header {
 		&__home {
