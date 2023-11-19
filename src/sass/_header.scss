@@ -36,7 +36,7 @@
 	@supports (-webkit-touch-callout: none) {
 		&__home {
 			height: 70vh;
-			background-image: url('../img/apartamenty_hero_mobile_test.jpg');
+			background-image: url('../img/apartamenty_hero_mobile_test.jpg'), $gradient;
 			background-position:center;
 			background-attachment:scroll;
 			background-size:cover;
