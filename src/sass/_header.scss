@@ -30,14 +30,14 @@
 		@include backgroundHeader;
 	}
 
-	@supports (-webkit-touch-callout: none) {
-		&__home {
-			height: 80vh;
-			background-size: auto 80vh;
-			background-image: url('../img/apartamenty_hero_mobile_test.jpg') center top no-repeat
-					scroll;
-		}
-	}
+	// @supports (-webkit-touch-callout: none) {
+	// 	&__home {
+	// 		height: 80vh;
+	// 		background-size: auto 80vh;
+	// 		background-image: url('../img/apartamenty_hero_mobile_test.jpg') center top no-repeat
+	// 				scroll;
+	// 	}
+	// }
 
 	&__apartment {
 		height: 25vh;
