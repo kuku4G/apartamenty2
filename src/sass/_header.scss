@@ -32,11 +32,10 @@
 
 	@supports (-webkit-touch-callout: none) {
 		&__home {
-			display: list-item;
 			height: 80vh;
 			background-size: auto 80vh;
-			background: url('../img/apartamenty_hero_mobile_test.jpg') center top no-repeat scroll;
-			background-image: -webkit-linear-gradient($gradient) ;
+			background-image: url('../img/apartamenty_hero_mobile_test.jpg') center top no-repeat scroll, $gradient;
+			// background-image: -webkit-linear-gradient($gradient);
 		}
 	}
 
