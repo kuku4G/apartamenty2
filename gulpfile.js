@@ -18,12 +18,12 @@ const paths = {
 	html: './html/**/*.kit',
 	sass: './src/sass/**/*.scss',
 	js: './src/js/**/*.js',
-	img: './src/img/*',
+	img: './src/img/**/*',
 
 	dist: './dist',
-	sassDest: './dist/css/**/*.css',
-	jsDest: './dist/js/**/*.js',
-	imgDest: './dist/img/*',
+	sassDest: './dist/css',
+	jsDest: './dist/js',
+	imgDest: './dist/img',
 };
 
 function sassCompiler(done) {
