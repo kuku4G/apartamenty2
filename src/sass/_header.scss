@@ -25,24 +25,25 @@
 	text-align: center;
 	color: $pure-white;
   
-	@supports (-webkit-touch-callout: none) {
-	  &__home {
-		height: 80vh;
-		background-size: auto 80vh;
-		background: -webkit-linear-gradient(45deg, rgba(99, 96, 96, 0.75), rgba(26, 17, 12, 0.853)), url('../img/apartamenty_hero_mobile_test.jpg') no-repeat center center cover scroll;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	  }
-	}  
-	
 	&__home {
+	  position: relative;
 	  height: 80vh;
-	  @include backgroundHeader;
+	  overflow: hidden; /* Ensure the gradient doesn't overflow */
+	  @include backgroundHeader; /* You may have a mixin for background styles here */
+  
+	  /* Apply gradient using a pseudo-element */
+	  &::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: -webkit-linear-gradient(45deg, rgba(99, 96, 96, 0.75), rgba(26, 17, 12, 0.853));
+		z-index: -1; /* Ensure the gradient is behind the content */
+	  }
 	}
   
-
 	&__apartment {
 		height: 25vh;
 		background-image: $gradientTwo;
