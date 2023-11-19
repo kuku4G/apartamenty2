@@ -19,33 +19,33 @@
 }
 
 @mixin apartmentsHero {
-	background-image: url('dist/img/relax/mobile/apartament_front_mobile.jpg');
+	background-image: url('../img/relax/mobile/apartament_front_mobile.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 @mixin apartmentsHeroBig {
-	background-image: url('dist/img/relax/apartament_front.jpg');
+	background-image: url('../img/relax/apartament_front.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 @mixin backgroud {
-	background-image: $gradientTwo, url('dist/img/background/forest.jpg');
+	background-image: $gradientTwo, url('../img/background/forest.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 }
 
 @mixin backgroundHeader {
-	background-image: $gradient, url('dist/img/apartamenty_hero_mobile.jpg');
+	background-image: $gradient, url('../img/apartamenty_hero_mobile.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 }
 
 @mixin backgroundHeaderBig {
-	background-image: $gradient, url('dist/img/apartamenty_hero.jpg');
+	background-image: $gradient, url('../img/apartamenty_hero.jpg');
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
