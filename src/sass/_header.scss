@@ -34,10 +34,22 @@
 		&__home {
 			height: 80vh;
 			background-size: auto 80vh;
-			background-image: url('../img/apartamenty_hero_mobile_test.jpg') center top no-repeat scroll, $gradient;
-			// background-image: -webkit-linear-gradient($gradient);
+			background-image: url('../img/apartamenty_hero_mobile_test.jpg') center top no-repeat scroll;
+		}
+
+		&__home::before {
+			content: '';
+			display: block;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			background-image: linear-gradient(
+				45deg,
+				rgba(99, 96, 96, 0.75),
+				rgba(26, 17, 12, 0.853));
 		}
 	}
+
 
 	&__apartment {
 		height: 25vh;
