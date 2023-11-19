@@ -31,22 +31,19 @@
 	}
 
 	@supports (-webkit-touch-callout: none) {
-		&__home::after {
+		&__home {
 			height: 80vh;
 			background-size: auto 80vh;
-			background-image: url('../img/apartamenty_hero_mobile_test.jpg') center
-				top no-repeat scroll;
-			background-image: linear-gradient(
-				45deg,
-				rgba(99, 96, 96, 0.75),
-				rgba(26, 17, 12, 0.853)
-			);
-			content: '';
-			position: absolute;
-			height: 100%;
-			width: 100%;
-			top: 0px;
-			left: 0px;
+			background: linear-gradient(
+					45deg,
+					rgba(99, 96, 96, 0.75),
+					rgba(26, 17, 12, 0.853)
+				),
+				url('../img/apartamenty_hero_mobile_test.jpg') center top no-repeat
+					scroll;
+			background: url('../img/apartamenty_hero_mobile_test.jpg') center
+					top no-repeat scroll,
+				-webkit-linear-gradient(45deg, rgba(99, 96, 96, 0.75), rgba(26, 17, 12, 0.853));
 		}
 	}
 
