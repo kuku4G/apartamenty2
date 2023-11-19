@@ -26,7 +26,8 @@
 	color: $pure-white;
 
 	&__home {
-		height: 80vh;
+		height: 70vh;
+		top: 0;
 		@include backgroundHeader;
 	}
 
