@@ -35,18 +35,25 @@
 
 	@supports (-webkit-touch-callout: none) {
 		&__home::before {
+			height: 80vh;
 			content: '';
 			position: absolute;
+			background: url('../img/apartamenty_hero_mobile_test.jpg') center top no-repeat scroll,
+						-webkit-linear-gradient(45deg, rgba(99, 96, 96, 0.75), rgba(26, 17, 12, 0.853));
+			background-size: auto 80vh; /* Specify the background size */
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background: linear-gradient(
-				45deg,
-				rgba(99, 96, 96, 0.75),
-				rgba(26, 17, 12, 0.853));
 		}
 	}
+
+	// @supports (-webkit-touch-callout: none) {
+	// 	&__home::before {
+			
+			
+	// 	}
+	// }
 
 	&__apartment {
 		height: 25vh;
