@@ -34,8 +34,14 @@
 		&__home {
 			height: 80vh;
 			background-size: auto 80vh;
-			background-image: url('../img/apartamenty_hero_mobile_test.jpg') center top no-repeat scroll;
-			background-color: rgba(0, 0, 0, 0.4)
+			background-image: url('../img/apartamenty_hero_mobile_test.jpg') center
+				top no-repeat scroll;
+			background-color: rgba(0, 0, 0, 0.4);
+			content: '';
+			display: block;
+			height: 100%;
+			position: absolute;
+			width: 100%;
 		}
 	}
 
