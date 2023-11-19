@@ -25,11 +25,6 @@
 	text-align: center;
 	color: $pure-white;
   
-	&__home {
-	  height: 80vh;
-	  @include backgroundHeader;
-	}
-  
 	@supports (-webkit-touch-callout: none) {
 	  &__home {
 		height: 80vh;
@@ -41,6 +36,12 @@
 		background-size: cover;
 	  }
 	}  
+	
+	&__home {
+	  height: 80vh;
+	  @include backgroundHeader;
+	}
+  
 
 	&__apartment {
 		height: 25vh;
