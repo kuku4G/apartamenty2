@@ -30,6 +30,14 @@
 		@include backgroundHeader;
 	}
 
+	@supports (-webkit-touch-callout: none) {
+		&__home {
+			height: 80vh;
+			background: url('../img/apartamenty_hero_mobile_test.jpg') center top no-repeat scroll;
+			background-size: auto 80vh;
+		}
+	}
+
 	&__apartment {
 		height: 25vh;
 		background-image: $gradientTwo;
@@ -89,11 +97,3 @@
 		}
 	}
 }
-
-// @media (min-width: 1024px) {
-// 	.header {
-// 		&__home {
-// 			@include backgroundHeaderBig;
-// 		}
-// }
-// }
