@@ -40,8 +40,10 @@
 @mixin backgroundHeader {
 	background-image: $gradient, url('../img/apartamenty_hero_mobile.jpg');
 	background-size: cover;
-	background-position: center;
 	background-attachment: fixed;
+	background-position: center;
+	object-fit: cover;
+	object-position: center;
 }
 
 @mixin backgroundHeaderBig {
