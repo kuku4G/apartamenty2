@@ -34,7 +34,7 @@
 	}
 
 	@supports (-webkit-touch-callout: none) {
-		&__home::before {
+		&__home::after {
 			height: 80vh;
 			content: '';
 			position: absolute;
