@@ -72,6 +72,10 @@
 
 @media (min-width: 768px) {
 	.header {
+		&__home {
+			@include backgroundHeaderBig;
+		}
+
 		&__heading {
 			font-size: 6.6rem;
 		}
@@ -86,10 +90,10 @@
 	}
 }
 
-@media (min-width: 1024px) {
-	.header {
-		&__home {
-			@include backgroundHeaderBig;
-		}
-}
-}
+// @media (min-width: 1024px) {
+// 	.header {
+// 		&__home {
+// 			@include backgroundHeaderBig;
+// 		}
+// }
+// }
