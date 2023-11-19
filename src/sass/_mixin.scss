@@ -19,13 +19,13 @@
 }
 
 @mixin apartmentsHero {
-	background-image: url('/dist/img/relax/mobile/apartament_front_mobile.jpg');
+	background-image: url('../img/apartament_front_mobile.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
 @mixin apartmentsHeroBig {
-	background-image: url('/dist/img/relax/apartament_front.jpg');
+	background-image: url('../img/apartament_front.jpg');
 	background-size: cover;
 	background-position: center;
 }
