@@ -51,18 +51,29 @@
 
 .hero-img {
 	position: relative;
-	background-image: url('../img/apartamenty_hero_mobile_test.jpg');
+	background-image: url('../img/apartamenty_hero_mobile.jpg');
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	align-items: center;
-	height: 70vh;
+	height: 80vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	padding: 2em;
 	text-align: center;
+
+	@supports (-webkit-touch-callout : none) {
+		.hero-img {
+			background-attachment: scroll;
+			background-size: cover;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+		}
+	}
 
 	&__shadow {
 		position: absolute;
@@ -84,7 +95,7 @@
 
 @media (min-width: 768px) {
 	.hero-img {
-			background-image: url('../img/apartamenty_hero_mobile_test.jpg');
+		background-image: url('../img/apartamenty_hero.jpg');
 	}
 	.header {
 		&__heading {
