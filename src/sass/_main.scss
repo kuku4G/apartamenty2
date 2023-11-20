@@ -8,10 +8,16 @@
 		padding: 1em 0;
 	}
 
-	@include backgroud;
-	background-color: $background-aboutus;
-	font-family: $fontTitle;
-	color: $font-color-dark;
+	@include backgroundImage;
+	background: url('../img/forest.jpg') center center;
+
+	&:after {	
+		@include background;
+	}
+
+	&__shadow {
+		@include shadow;
+	}
 
 	&__boxes {
 		display: flex;
@@ -87,6 +93,7 @@
 		justify-content: center;
 		align-items: center;
 		margin-bottom: 2em;
+		position: relative;
 	}
 
 	&__contain {
@@ -128,7 +135,6 @@
 
 		@include boxShadowDark;
 		@include animationCards;
-		// overflow: hidden;
 
 		position: relative;
 		display: flex;
@@ -218,9 +224,19 @@
 }
 
 .apartments {
-	@include backgroud;
-
+	@include backgroundImage;
+	background: url('../img/forest.jpg') center center;
 	overflow: hidden;
+	position: relative;
+
+	&:after {	
+		@include background;
+	}
+
+	&__shadow {
+		@include shadow;
+	}
+
 
 	&__box {
 		display: flex;
@@ -231,6 +247,7 @@
 
 	&__boxes {
 		@include animationCards;
+		position: relative;
 		display: flex;
 		justify-content: center;
 		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
@@ -249,6 +266,7 @@
 	}
 
 	&__option {
+		position: relative;
 		margin: 1em;
 		@include boxShadowDark;
 		@include animationCards;
@@ -266,7 +284,6 @@
 
 		&-info {
 			padding: 0 1em;
-			// @include centerContentColumn;
 			text-align: center;
 			width: 100%;
 		}
@@ -451,7 +468,7 @@
 
 	.apartments {
 		&__boxes-special {
-			height: 52vh;
+			height: 34vh;
 		}
 
 		&__option {
