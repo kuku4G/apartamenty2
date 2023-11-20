@@ -51,12 +51,11 @@
 
 .hero-img {
 	position: relative;
-	background-image: url('../img/apartamenty_hero_mobile.jpg');
-	background-size: cover;
-	background-position: center;
+	// background-image: url('../img/apartamenty_hero_mobile.jpg');
+	// background-position: center;
 	background-repeat: no-repeat;
-	background-attachment: fixed;
-	align-items: center;
+	// background-attachment: fixed;
+	background-size: cover;
 	height: 80vh;
 	display: flex;
 	justify-content: center;
@@ -64,15 +63,24 @@
 	flex-direction: column;
 	padding: 2em;
 	text-align: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 
-	@supports (-webkit-touch-callout : none) {
-		.hero-img {
-			background-attachment: scroll;
-			background-size: cover;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-		}
+	&:after {
+		content: '';
+		position: fixed; /* stretch a fixed position to the whole screen */
+		top: 0;
+		height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+		left: 0;
+		right: 0;
+		z-index: -1; /* needed to keep in the background */
+		background: url('../img/apartamenty_hero_mobile.jpg')
+			center center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 	}
 
 	&__shadow {
