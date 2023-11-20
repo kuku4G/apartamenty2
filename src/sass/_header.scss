@@ -50,13 +50,13 @@
 }
 
 .hero-img {
-	@include backgroundFixed;
-	background-image: linear-gradient(
-			45deg,
-			rgba(99, 96, 96, 0.75),
-			rgba(26, 17, 12, 0.853)
-		),
-		url('../img/apartamenty_hero_mobile.jpg');
+	// @include backgroundFixed;
+	// background-image: linear-gradient(
+	// 		45deg,
+	// 		rgba(99, 96, 96, 0.75),
+	// 		rgba(26, 17, 12, 0.853)
+	// 	),
+	// 	url('../img/apartamenty_hero_mobile.jpg');
 	height: 80vh;
 	display: flex;
 	justify-content: center;
@@ -64,6 +64,16 @@
 	flex-direction: column;
 	padding: 2em;
 	text-align: center;
+
+	@include backgroundImage;
+		&:after {
+			background: url('../img/apartamenty_hero_mobile.jpg') center center;
+			@include background;
+		}
+	
+		&__shadow {
+			@include shadow;
+		}
 
 	&__text {
 		color: $pure-white;
@@ -76,24 +86,25 @@
 	}
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-	.hero-img {
-		@include backgroundImage;
-		&:after {
-			background: url('../img/apartamenty_hero_mobile.jpg') center center;
-			@include background;
-		}
+// @supports (-webkit-overflow-scrolling: touch) {
+// 	.hero-img {
+// 		@include backgroundImage;
+// 		&:after {
+// 			background: url('../img/apartamenty_hero_mobile.jpg') center center;
+// 			@include background;
+// 		}
 	
-		&__shadow {
-			@include shadow;
-		}
-	}
-}
+// 		&__shadow {
+// 			@include shadow;
+// 		}
+// 	}
+// }
 
 @media (min-width: 768px) {
 	.hero-img {
-		background-image: $gradient, url('../img/apartamenty_hero.jpg');
+		background-image: url('../img/apartamenty_hero.jpg');
 	}
+	
 	.header {
 		&__heading {
 			font-size: 6.6rem;
