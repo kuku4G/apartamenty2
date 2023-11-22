@@ -2,11 +2,8 @@ $carousel-height: 14em;
 $carousel-preview-width: 70;
 
 $item-width: 220px;
-
-// $products-amount-visible: 4;
 $product-width: 200px;
 
-// $carousel-width: calc(($product-width * 3) + 33px);
 .wrapper__apartaments {
 	display: flex;
 	justify-content: center;
@@ -51,6 +48,7 @@ $product-width: 200px;
 		display: table;
 		top: 38%;
 		transform: translateY(-50%);
+		cursor: pointer;
 
 		.icon {
 			display: table-cell;
@@ -271,6 +269,9 @@ $product-width: 200px;
 		&__view {
 			width: 240px;
 		}
+		&__info {
+			padding-top: 200px;
+		}
 	}
 
 	.product-list {
@@ -342,23 +343,46 @@ $product-width: 200px;
 }
 
 @media (min-width: 768px) {
+	.carousel__view {
+		width: 460px;
+	}
+
+	.carousel__info {
+		padding-top: 330px;
+	}
+
+	.product {
+		height: 26em;
+	}
+
 	.product-list {
 		&__item {
-			width: 371px;
+			width: 470px;
+			height: 28em;
 		}
 	}
 }
 
 @media (min-width: 992px) {
-
 	.product-list {
 		&__item {
+			width: 371px;
 			height: 20em;
 		}
 	}
 
 	.product {
 		height: 18em;
+	}
+
+	.carousel {
+		&__view {
+			width: 363px;
+		}
+		
+		&__info {
+			padding-top: 258px;
+		}
 	}
 }
 

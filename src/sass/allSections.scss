@@ -29,6 +29,7 @@ body {
 	font-family: 'Noto Serif Khmer', serif;
 	font-size: 1.6rem;
 	background-color: $light-white;
+	cursor: default;
 }
 
 .hidden {
@@ -48,6 +49,8 @@ body {
 h2.section-heading {
 	font-family: $fontTitle;
 	color: $pure-white;
+	font-size: 3.2rem;
+	padding: 1em;
 }
 
 h3.section-heading {
@@ -88,13 +91,14 @@ h3.section-heading {
 	padding: 0.4em;
 
 	&:hover {
-		color: $pure-white-transparent;
+		// color: $pure-white-transparent;
+		color: $linkHover;
 	}
 }
 
-@media (min-width: 315px) {
+@media (min-width: 280px) {
 	.section-padding {
-		padding: 2.5em 0em 4em;
+		padding: 3.5em 0em 2em;
 	}
 }
 

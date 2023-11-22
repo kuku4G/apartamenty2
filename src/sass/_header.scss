@@ -34,7 +34,7 @@
 
 	&__btn {
 		position: relative;
-		width: 60%;
+		width: 40%;
 		margin: 2em;
 		padding: 1em 0.8em;
 		font-size: 1.8rem;
@@ -42,10 +42,17 @@
 		border: none;
 		text-decoration: none;
 		text-transform: uppercase;
-		background-image: $sectionContact;
+		border-radius: 8px;
+		background-color: $linkHover;
 		cursor: pointer;
-		@include boxShadowDark;
+		// background-image: $sectionContact;
+		// @include boxShadowDark;
 		@include animationLinksWhite;
+		transition: all .3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.2);
+		}
 	}
 }
 

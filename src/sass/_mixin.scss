@@ -19,15 +19,9 @@
 }
 
 @mixin apartmentsHero {
-	background-image: url('../img/apartament_front_mobile.jpg');
 	background-size: cover;
 	background-position: center;
-}
-
-@mixin apartmentsHeroBig {
-	background-image: url('../img/apartament_front.jpg');
-	background-size: cover;
-	background-position: center;
+	margin: 1em;
 }
 
 @mixin backgroundImage {
@@ -51,6 +45,14 @@
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+@mixin backgroundImageForestMobile {
+	background: url('../img/forest_mobile.jpg') center center;
+}
+
+@mixin backgroundImageForest {
+	background: url('../img/forest.jpg') center center;
 }
 
 @mixin backgroundFixed {

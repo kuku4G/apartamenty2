@@ -50,8 +50,9 @@
 	}
 
 	&__bottom-text {
-		padding: 2em 1em 1em 1em;
+		padding: 4em 1em 1em 1em;
 		text-align: center;
+		font-size: 1.2rem;
 	}
 }
 
@@ -67,9 +68,6 @@
 			width: 80%;
 		}
 	}
-}
-
-@media (min-width: 576px) {
 }
 
 @media (min-width: 715px) {
