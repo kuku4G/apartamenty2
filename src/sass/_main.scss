@@ -3,12 +3,10 @@
 // =========================
 
 .aboutus {
-	// @include backgroundImage;
 	@include backgroundFirstTest;
 	@include backgroundImageForestMobile;
 
 	&:after {
-		// @include background;
 		@include backgroundSecondTest;
 	}
 
@@ -187,7 +185,6 @@
 		&-info {
 			padding: 0 30px;
 			text-align: center;
-			// position: absolute;
 			margin-top: 252px;
 			width: 100%;
 			height: 35px;
@@ -216,7 +213,6 @@
 				transition: color 0.5s ease-out;
 
 				&:hover {
-					// color: $pure-white-transparent;
 					color: $linkHover;
 				}
 			}
@@ -225,14 +221,12 @@
 }
 
 .apartments {
-	// @include backgroundImage;
-	@include backgroundImageForestMobile;
 	overflow: hidden;
 	position: relative;
+	@include backgroundImageForestMobile;
 	@include backgroundFirstTest;
 
 	&:after {
-		// @include background;
 		@include backgroundSecondTest;
 	}
 
@@ -492,7 +486,7 @@
 			width: 88%;
 
 			&-special {
-				height: 34vh;
+				height: 35vh;
 				background-image: url('../img/apartament_front.jpg');
 			}
 		}
@@ -536,7 +530,7 @@
 	}
 
 	.apartments {
-		&-special {
+		&__boxes-special {
 			height: 43vh;
 		}
 

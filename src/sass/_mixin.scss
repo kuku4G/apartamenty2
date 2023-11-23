@@ -24,14 +24,14 @@
 	margin: 1em;
 }
 
-@mixin backgroundImage {
-	position: relative;
-	background-repeat: no-repeat;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-}
+// @mixin backgroundImage {
+// 	position: relative;
+// 	background-repeat: no-repeat;
+// 	background-size: cover;
+// 	-webkit-background-size: cover;
+// 	-moz-background-size: cover;
+// 	-o-background-size: cover;
+// }
 
 @mixin background {
 	content: '';
@@ -77,13 +77,6 @@
 
 @mixin backgroundImageForest {
 	background: url('../img/forest.jpg') center center;
-}
-
-@mixin backgroundFixed {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: scroll !important;
 }
 
 @mixin shadow {

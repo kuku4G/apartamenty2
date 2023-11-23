@@ -45,8 +45,6 @@
 		border-radius: 8px;
 		background-color: $linkHover;
 		cursor: pointer;
-		// background-image: $sectionContact;
-		// @include boxShadowDark;
 		@include animationLinksWhite;
 		transition: all 0.3s ease-in-out;
 
@@ -57,13 +55,6 @@
 }
 
 .hero-img {
-	// @include backgroundFixed;
-	// background-image: linear-gradient(
-	// 		45deg,
-	// 		rgba(99, 96, 96, 0.75),
-	// 		rgba(26, 17, 12, 0.853)
-	// 	),
-	// 	url('../img/apartamenty_hero_mobile.jpg');
 	height: 80vh;
 	display: flex;
 	justify-content: center;
@@ -72,13 +63,10 @@
 	padding: 2em;
 	text-align: center;
 
-	// @include backgroundImage;
 	@include backgroundFirstTest;
 	background: url('../img/apartamenty_hero_mobile.jpg') center center;
 	
 	&:after {
-		// background: url('../img/apartamenty_hero_mobile.jpg') center center;
-		// @include background;
 		@include backgroundSecondTest;
 	}
 
@@ -96,20 +84,6 @@
 		align-items: center;
 	}
 }
-
-// @supports (-webkit-overflow-scrolling: touch) {
-// 	.hero-img {
-// 		@include backgroundImage;
-// 		&:after {
-// 			background: url('../img/apartamenty_hero_mobile.jpg') center center;
-// 			@include background;
-// 		}
-
-// 		&__shadow {
-// 			@include shadow;
-// 		}
-// 	}
-// }
 
 @media (min-width: 768px) {
 	.hero-img {
