@@ -48,7 +48,7 @@
 		// background-image: $sectionContact;
 		// @include boxShadowDark;
 		@include animationLinksWhite;
-		transition: all .3s ease-in-out;
+		transition: all 0.3s ease-in-out;
 
 		&:hover {
 			transform: scale(1.2);
@@ -72,15 +72,19 @@
 	padding: 2em;
 	text-align: center;
 
-	@include backgroundImage;
-		&:after {
-			background: url('../img/apartamenty_hero_mobile.jpg') center center;
-			@include background;
-		}
+	// @include backgroundImage;
+	@include backgroundFirstTest;
+	background: url('../img/apartamenty_hero_mobile.jpg') center center;
 	
-		&__shadow {
-			@include shadow;
-		}
+	&:after {
+		// background: url('../img/apartamenty_hero_mobile.jpg') center center;
+		// @include background;
+		@include backgroundSecondTest;
+	}
+
+	&__shadow {
+		@include shadow;
+	}
 
 	&__text {
 		color: $pure-white;
@@ -100,7 +104,7 @@
 // 			background: url('../img/apartamenty_hero_mobile.jpg') center center;
 // 			@include background;
 // 		}
-	
+
 // 		&__shadow {
 // 			@include shadow;
 // 		}
@@ -111,7 +115,7 @@
 	.hero-img {
 		background-image: url('../img/apartamenty_hero.jpg');
 	}
-	
+
 	.header {
 		&__heading {
 			font-size: 6.6rem;

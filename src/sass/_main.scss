@@ -3,11 +3,13 @@
 // =========================
 
 .aboutus {
-	@include backgroundImage;
+	// @include backgroundImage;
+	@include backgroundFirstTest;
 	@include backgroundImageForestMobile;
 
-	&:after {	
-		@include background;
+	&:after {
+		// @include background;
+		@include backgroundSecondTest;
 	}
 
 	&__shadow {
@@ -19,6 +21,7 @@
 		justify-content: center;
 		align-items: center;
 		flex-wrap: wrap;
+		padding-bottom: 3em;
 	}
 
 	&__box {
@@ -39,7 +42,7 @@
 		left: 50%;
 		transform: translateX(-50%);
 		font-size: 2rem;
-		padding: .8em;
+		padding: 0.8em;
 		color: $font-color-dark;
 	}
 
@@ -210,7 +213,7 @@
 				transition: color 0.3s;
 				font-weight: 200;
 				padding: 0.5em;
-				transition: color .5s ease-out;
+				transition: color 0.5s ease-out;
 
 				&:hover {
 					// color: $pure-white-transparent;
@@ -222,13 +225,15 @@
 }
 
 .apartments {
-	@include backgroundImage;
+	// @include backgroundImage;
 	@include backgroundImageForestMobile;
 	overflow: hidden;
 	position: relative;
+	@include backgroundFirstTest;
 
-	&:after {	
-		@include background;
+	&:after {
+		// @include background;
+		@include backgroundSecondTest;
 	}
 
 	&__shadow {
@@ -419,7 +424,7 @@
 			&-heading {
 				font-size: 2.8rem;
 			}
-	
+
 			&-text {
 				line-height: 1.4em;
 			}
@@ -453,7 +458,7 @@
 
 	.aboutus {
 		@include backgroundImageForest;
-		
+
 		.wrapper {
 			width: 100%;
 		}
@@ -531,9 +536,9 @@
 	}
 
 	.apartments {
-			&-special {
-				height: 43vh;
-			}
+		&-special {
+			height: 43vh;
+		}
 
 		&__option {
 			width: 28%;
