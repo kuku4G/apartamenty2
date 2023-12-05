@@ -80,7 +80,7 @@ h3.section-heading {
 	text-transform: uppercase;
 	font-family: $fontTitle;
 	color: $light-white;
-	padding: 1em .3em .5em;
+	padding: 1em 0.3em 0.5em;
 }
 
 .box-link {
@@ -187,7 +187,7 @@ h3.section-heading {
 
 .reservation {
 	background-color: #fff;
-	padding: 1em .5em 0;
+	padding: 1em 0.5em 0;
 }
 // =========================
 // CONTACT
@@ -206,6 +206,8 @@ h3.section-heading {
 .cookie-box {
 	position: fixed;
 	bottom: 0;
+	right: 0;
+	left: 0;
 	padding: 2em;
 	font-size: 1.5rem;
 	width: 100%;
@@ -213,7 +215,7 @@ h3.section-heading {
 	background-color: #ffffffbf;
 	opacity: 0;
 	transform: translateY(100%);
-	animation: showCookies .5s .5s forwards;
+	animation: showCookies 0.5s 0.5s forwards;
 }
 
 .cookie-btn {
@@ -223,7 +225,8 @@ h3.section-heading {
 	background-color: $linkHover;
 	border-radius: 6px;
 	border: 1px solid #e38b18;
-	transition: background-color .3s;
+	transition: background-color 0.3s;
+	color: $dark;
 	cursor: pointer;
 }
 
@@ -235,5 +238,6 @@ h3.section-heading {
 	to {
 		opacity: 1;
 		transform: translateY(0);
+		-webkit-transform: translateZ(0);
 	}
 }
