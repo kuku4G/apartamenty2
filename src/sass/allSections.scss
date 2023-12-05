@@ -196,3 +196,44 @@ h3.section-heading {
 // =========================
 // FOOTER
 // =========================
+
+//COOKIE
+
+.hide {
+	display: none;
+}
+
+.cookie-box {
+	position: fixed;
+	bottom: 0;
+	padding: 2em;
+	font-size: 1.5rem;
+	width: 100%;
+	text-align: center;
+	background-color: #ffffffbf;
+	opacity: 0;
+	transform: translateY(100%);
+	animation: showCookies .5s .5s forwards;
+}
+
+.cookie-btn {
+	margin-top: 1em;
+	padding: 0.5em 1em;
+	font-size: 1.2rem;
+	background-color: $linkHover;
+	border-radius: 6px;
+	border: 1px solid #e38b18;
+	transition: background-color .3s;
+	cursor: pointer;
+}
+
+.cookie-btn:hover {
+	background-color: #e38b18;
+}
+
+@keyframes showCookies {
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

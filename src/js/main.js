@@ -4,45 +4,25 @@ const allNavItems = document.querySelectorAll('.nav__item');
 const navBtnBars = document.querySelector('.burger-btn__bars');
 const allSections = document.querySelectorAll('.section');
 const footerYear = document.querySelector('.footer__year');
+const cookieBox = document.querySelector('.cookie-box')
+const cookieBtn = document.querySelector('.cookie-btn')
+
+//cookie
+const showCookie = () => {
+	const cookieEaten = localStorage.getItem('cookie');
+	if (cookieEaten) {
+		cookieBox.classList.add('hide')
+	}
+}
+const handleCookieBox = () => {
+	localStorage.setItem('cookie', 'true')
+	cookieBox.classList.add('hide')
+}
 
 const collection = document.querySelectorAll('.apartments__option-img');
 
 const array = Array.from(collection)
 console.log(array)
-// const imgCarousel = document.querySelector('.carousel__track');
-// const slides = Array.from(imgCarousel.children);
-// const arrowCarouselRight = document.querySelector('.carousel__button-right');
-// const arrowCarouselLeft = document.querySelector('.carousel__button-left');
-
-
-
-// let picturesApartamentOne = ['http://localhost:3000/src/img/room1.jpg, ']; 
-
-// imgCarousel.src = picturesApartamentOne[0];
-// let position = 0;
-
-// const moveRight = () => {
-// 	if(position >= picturesApartamentOne.length -1) {
-// 		position = 0
-// 		imgCarousel.src = picturesApartamentOne[position];
-// 		return;
-// 	}
-// 	imgCarousel.src = picturesApartamentOne[position + 1];
-// 	position ++;
-// }
-
-// const moveLeft = () => {
-// 	if(position < 1) {
-// 		position = picturesApartamentOne.length -1;
-// 		imgCarousel.src = picturesApartamentOne[position];
-// 		return;
-// 	}
-// 	imgCarousel.src = picturesApartamentOne[position - 1];
-// 	position --;
-// }
-
-// arrowCarouselRight.addEventListener('click', moveRight);
-// arrowCarouselLeft.addEventListener('click', moveLeft);
 
 var lastScrollTop = 0;
 const hiddenElements = document.querySelectorAll('.hidden');
@@ -64,29 +44,6 @@ window.addEventListener('scroll', function () {
 	});
 	hiddenElements.forEach((el) => observer.observe(el));
 });
-
-// window.addEventListener(
-// 	'scroll',
-// 	function () {
-// 		var st = window.pageYOffset || document.body.scrollTop;
-// 		console.log(st);
-// 		if (st > lastScrollTop) {
-// 			// console.log('down');
-// 			hiddenElements.forEach((hiddenElement) => {
-// 				hiddenElement.classList.remove('hidden');
-// 				hiddenElement.classList.add('show');
-// 			});
-// 		} else if (st < lastScrollTop && st < 300) {
-// 			// console.log('top');
-// 			hiddenElements.forEach((hiddenElement) => {
-// 				hiddenElement.classList.remove('show');
-// 				hiddenElement.classList.add('hidden');
-// 			});
-// 		}
-// 		lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-// 	},
-// 	false
-// );
 
 const handleNav = () => {
 	nav.classList.toggle('nav--active');
@@ -138,3 +95,5 @@ const handleCurrentYear = () => {
 handleCurrentYear();
 navBtn.addEventListener('click', handleNav);
 window.addEventListener('scroll', handleObserver);
+cookieBox.addEventListener('click', handleCookieBox)
+showCookie()

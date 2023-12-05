@@ -45,7 +45,6 @@
 		border-radius: 8px;
 		background-color: $linkHover;
 		cursor: pointer;
-		@include animationLinksWhite;
 		transition: all 0.3s ease-in-out;
 
 		&:hover {

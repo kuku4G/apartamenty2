@@ -44,7 +44,7 @@
 </header>
     
 <section class="reservation">
-    <iframe class="section white-section bodyMain" id="ra-reservation-form-v2-b2022fc7086097fc8c6af219eb86e7cf" style="width: 100%; height:100px; border: none; padding: 0;" src="https://roomadmin.pl/widget/reservation-v2/start?fh=4039e42d4e63cafe84653ef9f5083accb997ea39&style=%7B%22color_accent%22%3A%22%233d3d3d%22%2C%22color_bg%22%3A%22%23FFFFFF%22%2C%22color_panel_header%22%3A%22%23FFFFFF%22%2C%22color_panel_body%22%3A%22%23FFFFFF%22%2C%22rounded_corners%22%3Atrue%7D&filter=%7B%7D&lang=pl"></iframe> <script> try { (function () { var iframe = window.document.getElementById('ra-reservation-form-v2-b2022fc7086097fc8c6af219eb86e7cf'); function raMessageReceiver(event) { if (iframe) { if(!event.data.sender || "reservation-form-b2022fc7086097fc8c6af219eb86e7cf" !== event.data.sender){ return; } if (event.data.height) { iframe.style.height = (event.data.height + 10) + "px"; } if (event.data.event && event.data.event.name === "widget.scrollup.requested") { try { iframe.scrollIntoView({behavior: "smooth", block: "start"}); } catch(e) {} } if(event.data.event && event.data.event.name === "reservation.submit.success"){ /*console.log(event.data.event.data.reservation); */ } if(event.data.event && event.data.event.name === "reservation.variant-search.start"){ /*console.log("variant search started"); */ } } } window.addEventListener("message", raMessageReceiver, false); function setup() { try { iframe.contentWindow.postMessage({ location: window.location.toString(), setup: { autoHeight: true, senderName : "reservation-form-b2022fc7086097fc8c6af219eb86e7cf" } }, "*"); } catch (e) { } } setInterval(setup, 1000); iframe.addEventListener("load", setup); })(); } catch (e) { console.error(e); } </script>
+    <iframe class="section white-section bodyMain" id="ra-reservation-form-v2-ec7c016fe9d3d1f4b29a649c64093348" style="width: 100%; height:100px; border: none; padding: 0;" src="https://roomadmin.pl/widget/reservation-v2/start?fh=4039e42d4e63cafe84653ef9f5083accb997ea39&style=%7B%22color_accent%22%3A%22%23ff9e22%22%2C%22color_bg%22%3A%22%23FFFFFF%22%2C%22color_panel_header%22%3A%22%23FFFFFF%22%2C%22color_panel_body%22%3A%22%23FFFFFF%22%2C%22rounded_corners%22%3Atrue%7D&filter=%7B%7D&lang=pl"></iframe> <script> try { (function () { var iframe = window.document.getElementById('ra-reservation-form-v2-ec7c016fe9d3d1f4b29a649c64093348'); function raMessageReceiver(event) { if (iframe) { if(!event.data.sender || "reservation-form-ec7c016fe9d3d1f4b29a649c64093348" !== event.data.sender){ return; } if (event.data.height) { iframe.style.height = (event.data.height + 10) + "px"; } if (event.data.event && event.data.event.name === "widget.scrollup.requested") { try { iframe.scrollIntoView({behavior: "smooth", block: "start"}); } catch(e) {} } if(event.data.event && event.data.event.name === "reservation.submit.success"){ /*console.log(event.data.event.data.reservation); */ } if(event.data.event && event.data.event.name === "reservation.variant-search.start"){ /*console.log("variant search started"); */ } } } window.addEventListener("message", raMessageReceiver, false); function setup() { try { iframe.contentWindow.postMessage({ location: window.location.toString(), setup: { autoHeight: true, senderName : "reservation-form-ec7c016fe9d3d1f4b29a649c64093348" } }, "*"); } catch (e) { } } setInterval(setup, 1000); iframe.addEventListener("load", setup); })(); } catch (e) { console.error(e); } </script>
 </section>
 
     <section class="aboutus section" id="aboutus">
@@ -167,11 +167,20 @@
 			</div>
 		</div>
 	</div>
-    <p class="footer__regulations"><a href="regulations.html" class="contact__box-contact-info box-link">Regulamin</a></p>
+    <p class="footer__regulations">
+        <a href="privacy.html" class="box-link footer__regulations--top">Polityka prywatności</a>
+        <a href="regulations.html" class="box-link ">Regulamin</a>
+    </p>
 
-	<p class="footer__bottom-text">&copy; <span class="footer__year"></span> ApartamentySadowy | All rights reserved</p>
+	<p class="footer__bottom-text">&copy; <span class="footer__year"></span> ApartamentySadowy | All rights reserved | <a href="https://kuku4g.github.io/websiteContact" class="box-link">kuku4G</a></p>
+    
 </footer>
 
+    <div class="cookie-box">
+    <p>Ta strona korzysta z ciasteczek, aby świadczyć usługi na najwyższym poziomie. Dalsze korzystanie ze strony oznacza, że zgadzasz się na ich użycie. 
+    <br>Więcej infrmacji znajdziesz <a href="privacy.html">Polityka prywatności</a></p>
+    <button class="cookie-btn">Zgoda</button>
+</div>
     <script defer src="./dist/js/main.min.js"></script>
     <script defer src="./dist/js/carousel.min.js"></script>
 </body>
