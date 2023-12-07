@@ -1,1 +1,2 @@
-# apartamenty_sadowy
+# Apartament Sadowy
+Projekt strony internetowej dla pensjonatu
