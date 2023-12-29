@@ -10,6 +10,7 @@
         height: 7.5em;
         @include boxShadowDark;
         @include animationCards;
+        cursor: default;
 
         .furnishing-icon {
             margin-top: 0.5em;
