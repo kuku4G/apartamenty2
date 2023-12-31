@@ -182,6 +182,14 @@
 			}
 		}
 
+		&-arrow {
+			display: flex;
+			justify-content: end;
+			margin: 8px;
+			color: $light-white;
+			// color: #000;
+		}
+
 		&-info {
 			padding: 0 30px;
 			text-align: center;
