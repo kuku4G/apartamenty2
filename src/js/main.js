@@ -92,6 +92,26 @@ const handleCurrentYear = () => {
 	footerYear.innerText = year;
 };
 
+const touchCards = document.querySelectorAll('.card__cards')
+
+for (let i=0; i < touchCards.length; i++) {
+	touchCards[i].addEventListener('touchstart', function() {
+		this.classList.toggle('card__cards-transition')
+	})
+	// touchCards[i].addEventListener('touchstart',  function()) {
+		
+	// 	console.log('tik')
+	}
+// }
+// function mobileLinksShow(event) {
+//         touchCards.forEach((element) => {
+// 			element.classList.toggle('card__cards-transition');
+// 			event.preventDefault();
+// 		})
+// 		// console.log('touch')
+// onclick=" mobileLinksShow(event);" - do kodu HTML
+// }
+
 handleCurrentYear();
 navBtn.addEventListener('click', handleNav);
 window.addEventListener('scroll', handleObserver);
