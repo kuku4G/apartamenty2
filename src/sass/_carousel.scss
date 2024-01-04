@@ -9,7 +9,7 @@ $product-width: 200px;
 	justify-content: center;
 	flex-wrap: wrap;
 	flex-direction: row;
-    margin: 0 auto; 
+	margin: 0 auto;
 }
 
 .carousel {
@@ -18,7 +18,7 @@ $product-width: 200px;
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	
+
 	&__view {
 		width: 350px;
 		height: auto;
@@ -125,8 +125,6 @@ $product-width: 200px;
 		background-image: url(../img/apartaments/apartament1/taras.jpg);
 	}
 
-
-
 	&[data-slide='20'] {
 		background-image: url(../img/apartaments/apartament2/sypialnia2.jpg);
 	}
@@ -148,7 +146,6 @@ $product-width: 200px;
 	&[data-slide='26'] {
 		background-image: url(../img/apartaments/apartament1/taras.jpg);
 	}
-
 
 	&[data-slide='30'] {
 		background-image: url(../img/apartaments/apartament3/sypialnia1.jpg);
@@ -174,7 +171,6 @@ $product-width: 200px;
 	&[data-slide='37'] {
 		background-image: url(../img/apartaments/apartament3/taras.jpg);
 	}
-
 
 	&[data-slide='40'] {
 		background-image: url(../img/apartaments/apartament4/sypialnia2.1.jpg);
@@ -225,7 +221,6 @@ $product-width: 200px;
 	&[data-slide='57'] {
 		background-image: url(../img/apartaments/apartament4/taras.jpg);
 	}
-
 
 	&[data-slide='60'] {
 		background-image: url(../img/apartaments/apartament6/salon1.1.jpg);
@@ -305,7 +300,7 @@ $product-width: 200px;
 		&__view {
 			width: 330px;
 		}
-		
+
 		&__info {
 			padding-top: 235px;
 		}
@@ -328,7 +323,7 @@ $product-width: 200px;
 		&__view {
 			width: 363px;
 		}
-		
+
 		&__info {
 			padding-top: 258px;
 		}
@@ -379,7 +374,7 @@ $product-width: 200px;
 		&__view {
 			width: 363px;
 		}
-		
+
 		&__info {
 			padding-top: 258px;
 		}
@@ -406,7 +401,6 @@ $product-width: 200px;
 		}
 	}
 }
-
 
 @media (min-width: 1530px) {
 	.wrapper__apartaments {
