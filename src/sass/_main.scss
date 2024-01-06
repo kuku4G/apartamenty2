@@ -123,6 +123,25 @@
 	margin: 4em 0 0;
 }
 
+@media (max-width: 576px) {
+	.active {	
+		.card__cards-image {
+			top: -100px;
+			scale: 0.8;
+			box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+			border: 5px solid $light-white;
+			padding: 3px;
+		}
+	
+		.card__cards-info {
+			margin-top: 130px;
+			height: 250px;
+			font-weight: 200;
+			color: white;
+		}
+	}
+}
+
 .card {
 	&__cards {
 		margin: 3.3em 1em;
@@ -130,20 +149,20 @@
 		transition: transform 0.3s;
 
 		@include boxShadowDark;
-		@include animationCards;
-
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
 		transition: 0.5s;
 		width: 350px;
-		height: 300px;
+		height: 310px;
 		background-color: #f4f1ed73;
 		border-radius: 8px;
 		box-shadow: 5px 5px 10px rgba(46, 46, 46, 0.18);
 
-		&:hover, &-transition {
+		&:hover {
+			// -webkit-user-select: none;
+			-webkit-touch-callout: none;
 			height: 310px;
 
 			.card__cards-image {
@@ -245,7 +264,7 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		margin: 2em 0 2em;
+		margin: 4em 0 2em;
 	}
 
 	&__option {
@@ -379,7 +398,6 @@
 		&__box {
 			margin: 1em;
 		}
-
 
 		.apartments__icon {
 			font-size: 2rem;

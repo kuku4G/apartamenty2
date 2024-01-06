@@ -4,32 +4,32 @@ const allNavItems = document.querySelectorAll('.nav__item');
 const navBtnBars = document.querySelector('.burger-btn__bars');
 const allSections = document.querySelectorAll('.section');
 const footerYear = document.querySelector('.footer__year');
-const cookieBox = document.querySelector('.cookie-box')
-const cookieBtn = document.querySelector('.cookie-btn')
+const cookieBox = document.querySelector('.cookie-box');
+const cookieBtn = document.querySelector('.cookie-btn');
 
 //cookie
 const showCookie = () => {
 	const cookieEaten = localStorage.getItem('cookie');
 	if (cookieEaten) {
-		cookieBox.classList.add('hide')
+		cookieBox.classList.add('hide');
 	}
-}
+};
 const handleCookieBox = () => {
-	localStorage.setItem('cookie', 'true')
-	cookieBox.classList.add('hide')
-}
+	localStorage.setItem('cookie', 'true');
+	cookieBox.classList.add('hide');
+};
 
 const collection = document.querySelectorAll('.apartments__option-img');
 
-const array = Array.from(collection)
-console.log(array)
+const array = Array.from(collection);
+// console.log(array)
 
 var lastScrollTop = 0;
 const hiddenElements = document.querySelectorAll('.hidden');
 
 window.addEventListener('scroll', function () {
 	var st = window.scrollY || document.body.scrollTop;
-	console.log(st);
+	// console.log(st);
 
 	const observer = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
@@ -92,28 +92,44 @@ const handleCurrentYear = () => {
 	footerYear.innerText = year;
 };
 
-const touchCards = document.querySelectorAll('.card__cards')
+const touchCards = document.querySelectorAll('.card__cards');
 
-for (let i=0; i < touchCards.length; i++) {
-	touchCards[i].addEventListener('touchstart', function() {
-		this.classList.toggle('card__cards-transition')
-	})
-	// touchCards[i].addEventListener('touchstart',  function()) {
+for (let i = 0; i < touchCards.length; i++) {
+	touchCards[i].classList.add('active')
+	// touchCards[i].classList.remove('card__cards-arrow')
+
+	// let isDragging = false;
+	// let startY, currentY;
+
+	// touchCards[i].addEventListener(
+	// 	'touchstart',
+	// 	function (e) {
+	// 		this.classList.toggle('active');
+	// 		e.preventDefault();
+	// 		isDragging = true;
+	// 		startY = e.touches[0].clientY;
+	// 	}
+	// );
+
+	// touchCards[i].addEventListener('touchmove', function (e) {
+	// 	// if (!isDragging) return;
 		
-	// 	console.log('tik')
-	}
-// }
-// function mobileLinksShow(event) {
-//         touchCards.forEach((element) => {
-// 			element.classList.toggle('card__cards-transition');
-// 			event.preventDefault();
-// 		})
-// 		// console.log('touch')
-// onclick=" mobileLinksShow(event);" - do kodu HTML
-// }
+	// 	// currentY = e.touches[0].clientY;
+	// 	// let deltaY = currentY - startY;
+
+	// 	// Aktualizuj pozycję przesunięcia
+	// 	// window.scrollBy(0, -deltaY);
+	// 	// console.log(deltaY)
+	// });
+
+	// touchCards[i].addEventListener('touchend', function (e) {
+	// 	isDragging = false;
+	// 	e.preventDefault();
+	// });
+}
 
 handleCurrentYear();
 navBtn.addEventListener('click', handleNav);
 window.addEventListener('scroll', handleObserver);
-cookieBox.addEventListener('click', handleCookieBox)
-showCookie()
+cookieBox.addEventListener('click', handleCookieBox);
+showCookie();
